@@ -1,0 +1,369 @@
+html, body{
+    max-width: 100%; 
+/*    height: 100%;*/
+    overflow-x: hidden;
+/*    background-image: linear-gradient(yellow,black, blue,purple, yellow);*/
+/*    max-height: 100%;*/
+/*    scroll-behavior: smooth;*/
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+@font-face {
+    font-family: myFont4;
+    src: url(fonts/Arialnarrow.ttf);
+}
+
+.contents{
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width:70%;
+    background-color: gainsboro;
+    color:black;
+    font-family: myFont4;
+    font-size: 1.4em;
+    z-index: 999999;
+}
+
+.topbar{
+    position: relative;
+    display: block;
+    cursor: crosshair;
+}
+
+.topbar .info{
+    display: none;
+    background-color: gainsboro;
+    height: 50%;
+    position: fixed;
+    width: 75%;
+    z-index: 999999;
+    bottom:0;
+    left: 0;
+    font-family: 'myFont4';
+    font-size: 45px;
+    
+}
+
+.info p{
+    margin-left: 0.8em;
+}
+
+marquee{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:20%;
+    background-color: gainsboro;
+    color:black;
+    font-family: myFont4;
+    font-size: 1.4em;
+    z-index: 999999;
+/*    padding-bottom: 2px;*/
+}
+
+.wrapper0{
+    display: block;
+/*  display: flex;*/
+  justify-content: space-between;
+/*    height: 100%;*/
+}
+.wrapper1{
+    display: block;
+/*  display: flex;*/
+  justify-content: space-between;
+/*    height: 50em;*/
+}
+
+.wrapper2{
+    display: block;
+/*  display: flex;*/
+  justify-content: space-between;
+/*    height: 100%;*/
+}
+
+#smalltext{
+    font-size: 15px;
+/*    line-height: 20px;*/
+}
+
+#text0{
+    width: 20%;
+    float: right;
+    position: relative;
+    top: 20px;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-right: 2px;
+    height: auto;
+    background-color: transparent;
+    font-family: 'myFont4';
+    cursor:crosshair;
+}
+
+
+
+#text1{
+     width: 20%;
+    float: right;
+    position: relative;
+    top: 20px;
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-right: 2px;
+    height: auto;
+    background-color: transparent;
+    font-family: 'myFont4';
+    cursor:crosshair;
+}
+
+#smalltext1{
+    font-size: 15px;
+}
+
+p{
+    padding-right: 10px;
+/*    line-height: 20px;*/
+    margin-top:8px;
+
+    
+}
+
+#text2{
+    width: 20%;
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+/*    position: relative;*/
+    top: 20px;
+/*    max-height: 1000px;*/
+/*    bottom:0px;*/
+    margin-top: 30px;
+    padding-left: 10px;
+    height: 25vh;
+    background-color: transparent;
+    border-radius: 5px;
+    font-family: 'myFont4'
+}
+
+.text3{
+    width: 20%;
+    float: right;
+    position: relative;
+/*    top: 20px;*/
+    padding-left: 10px;
+    margin-right: 2px;
+    height: auto;
+    background-color: transparent;
+    font-family: 'myFont4';
+    cursor:crosshair;
+}
+.container0{
+    position: relative;
+    width: 78%;
+    height: auto;
+    top: 2em;
+    padding-bottom: 5px;
+    left: 5px;
+    right:5px;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 2.5em;
+}
+
+
+
+.container{
+    position: relative;
+    width: 78%;
+    height: auto;
+    top: 2em;
+    padding-bottom: 5px;
+    left: 5px;
+    right:5px;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 2.5em;    
+}
+
+.container2{
+    position: relative;
+    width: 78%;
+    height: auto;
+    top: 2em;
+    padding-bottom: 5px;
+    left: 5px;
+    right:5px;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 2.5em; 
+}
+
+.container3{
+    position: relative;
+    width: 78%;
+    height: auto;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    left: 5px;
+    right:5px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.container4{
+    position: relative;
+    width: 78%;
+    height: auto;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    left: 5px;
+    right:5px;
+    background: transparent;
+    border-radius: 10px;
+}
+.projects{
+    position: relative;
+    background: transparent;
+/*    margin: 10px 10px 10px 10px;*/
+      text-align:center;
+    border-radius: 10px;
+
+        
+}
+
+img{
+    border-radius: 10px 10px 10px 10px;
+    border: 0px;
+}
+
+button{
+    background: none;
+    outline:none;
+    border: none;
+    cursor: crosshair;
+    padding: 0px;
+}
+
+@media only screen and (max-device-width: 700px) {
+    img{
+        width: 100%;
+    }
+    
+    .container{
+        width: 98%;
+    }
+    
+    .container2{
+        width: 98%;
+    }
+    
+    .container3{
+        width: 98%;
+    }
+    
+     .bottom{
+        height: 2px;
+    }
+    
+    .bottom p{
+        font-size: 4vw;
+    }
+}
+    
+@media only screen and (max-width: 700px) {
+    img{
+        width: 100%;
+    }
+    
+    .projects{
+       margin: 7px;
+    }
+    
+    .container{
+        width: 98%;
+    }
+    
+    .container2{
+        width: 98%;
+    }
+    
+    .container3{
+        width: 98%;
+    }
+    
+    .bottom{
+        height: 2vw;
+    }
+    
+    .bottom p{
+        font-size: 2.5vw;
+    }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+    left: 320px;
+/*    top: 0px;*/
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
