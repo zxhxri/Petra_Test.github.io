@@ -4,7 +4,7 @@ html, body{
     overflow-x: hidden;
 /*    background-image: linear-gradient(yellow,black, blue,purple, yellow);*/
 /*    max-height: 100%;*/
-/*    scroll-behavior: smooth;*/
+    scroll-behavior: smooth !important;
 }
 ::-webkit-scrollbar { 
     display: none; 
@@ -13,7 +13,7 @@ html, body{
 
 @font-face {
     font-family: myFont4;
-    src: url(fonts/Arialnarrow.ttf);
+    src: url(fonts/ArialNarrow.ttf);
 }
 
 .contents{
@@ -27,6 +27,7 @@ html, body{
     font-family: myFont4;
     font-size: 1.4em;
     z-index: 999999;
+    
 }
 
 .topbar{
