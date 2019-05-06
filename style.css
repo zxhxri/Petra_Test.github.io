@@ -6,6 +6,7 @@ body {
     /*    background-image: linear-gradient(yellow,black, blue,purple, yellow);*/
     /*    max-height: 100%;*/
     scroll-behavior: smooth !important;
+    position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +19,30 @@ body {
     src: url(fonts/Arialnarrow.ttf);
 }
 
+#diagram0 {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    pointer-events: none;
+}
 
+#diagram1 {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    pointer-events: none;
+    padding-left: 50%;
+    top: 400px;
+}
+
+#diagram2 {
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    padding-top: 1500px;
+    padding-left: 1100px;
+    pointer-events: none;
+}
 
 .contents {
     display: block;
@@ -58,13 +82,13 @@ body {
     margin-left: 0.8em;
 }
 
-#close{
+#close {
     position: relative;
     display: inline-block;
     float: right;
     width: auto;
     padding-right: 10px;
-    
+
 }
 
 marquee {
@@ -284,29 +308,72 @@ button {
     color: yellow;
 }
 
+#myDIV0,
+#myDIV1,
+#myDIV2 {
+    display: none;
+}
+
 @media only screen and (max-device-width: 700px) {
     img {
         width: 100%;
     }
 
-    .container {
-        width: 98%;
+    .container0 {
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
+    }
+
+    .container1 {
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
     }
 
     .container2 {
-        width: 98%;
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
     }
 
     .container3 {
-        width: 98%;
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
     }
 
-    .bottom {
-        height: 2px;
+    .container4 {
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
     }
 
-    .bottom p {
-        font-size: 4vw;
+
+    #text0,
+    #text1,
+    #text2,
+    #text3 {
+        display: none;
+    }
+
+    #myDIV0,
+    #myDIV1,
+    #myDIV2 {
+        display: block;
+    }
+
+    .projects {
+        margin: 0px;
+    }
+
+    .info p {
+        font-size: 30px;
+    }
+
+    .info {
+        width: 100% !important;
+        height: auto;
     }
 }
 
@@ -316,26 +383,59 @@ button {
     }
 
     .projects {
-        margin: 7px;
+        margin: 0px;
     }
 
-    .container {
-        width: 98%;
+    .container0 {
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
+    }
+
+    .container1 {
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
     }
 
     .container2 {
-        width: 98%;
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
     }
 
     .container3 {
-        width: 98%;
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
     }
 
-    .bottom {
-        height: 2vw;
+    .container4 {
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
     }
 
-    .bottom p {
-        font-size: 2.5vw;
+
+
+    #text0,
+    #text1,
+    #text2,
+    #text3 {
+        display: none;
+    }
+
+    .info p {
+        font-size: 30px;
+    }
+
+    .info {
+        width: 100% !important;
+    }
+
+    #myDIV0,
+    #myDIV1,
+    #myDIV2 {
+        display: block;
     }
 }

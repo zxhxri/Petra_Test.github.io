@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-<html lang = "en">
+<html lang="en">
+
 <head>
     <title>PETRA POPANGELOVA</title>
     <meta charset="UTF-8" />
@@ -7,21 +8,22 @@
     <script type="text/javascript" src="index.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
     <script>
-$(document).ready(function(){
-    
-    $(".top").click(function(){
-        $(".info").slideToggle("slow");
-    });
-    $('#close').click(function(){
-        $('.info').slideToggle("slow");
-    });
-});
+        $(document).ready(function() {
+
+            $(".top").click(function() {
+                $(".info").slideToggle("slow");
+            });
+            $('#close').click(function() {
+                $('.info').slideToggle("slow");
+            });
+        });
+
     </script>
 
-`
-<!--
+    `
+    <!--
     <script>
         $(function() {
             function toggleMenuIndex() {
@@ -42,10 +44,23 @@ $(document).ready(function(){
 
 <body>
 
+    <div id="diagram0">
+        <img src="images/diagrams/diagram.png" width="50%">
+    </div>
+
+    <div id="diagram1">
+        <img src="images/diagrams/diagram7.png" width="50%">
+    </div>
+
+    <div id="diagram2">
+        <img src="images/diagrams/diagram5.png" width="50%">
+    </div>
+
     <div class="contents"><a href="#one">I.</a>&#32;<a href="#two">II.</a>&#32;<a href="#three">III.</a>&#32;<a href="#four">IV.</a>&#32;<a href="#five">V.</a></div>
     <div class="topbar">
         <marquee class="top" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="left">PETRA POPANGELOVA — BERLIN — LOOKING FOR A BETTER JOB </marquee>
-        <div class="info"><div id="close">X</div>
+        <div class="info">
+            <div id="close">X</div>
             <p>Multidisciplinary designer
                 material research,<br> product &amp; interior design, photography, concept development
                 <br>
@@ -54,7 +69,7 @@ $(document).ready(function(){
                 — Currently based in Berlin (DE) <br>
                 — Graduated Royal Academy of Art, The Hague (NL)<br>
                 — Born in Sofia (BG) </p>
-            
+
         </div>
     </div>
 
@@ -75,7 +90,7 @@ $(document).ready(function(){
 
             <img src="images/graduation/grad1.jpg" width="100%">
 
-            <div id="myDIV0" style="display:none">
+            <div id="myDIV0">
                 <img src="images/graduation/grad2.jpg" width="100%">
                 <img src="images/graduation/grad3.jpg" width="100%">
                 <img src="images/graduation/grad4.jpg" width="100%">
@@ -97,7 +112,7 @@ $(document).ready(function(){
 
 
         <img src="images/glass/glass2.jpg" width="100%">
-        <div id="myDIV1" style="display:none">
+        <div id="myDIV1">
             <img src="images/glass/glass3.jpg" width="100%">
             <img src="images/glass/glass4.jpg" width="100%">
             <img src="images/glass/glass5.jpg" width="100%"></div>
@@ -117,7 +132,7 @@ $(document).ready(function(){
     <div class="container2">
         <img src="images/fresco/fresco1.jpg" width=100% />
 
-        <div id="myDIV2" style="display:none">
+        <div id="myDIV2">
             <img src="images/fresco/fresco2.jpg" width=100%>
             <img src="images/fresco/fresco3.jpg" width=100%>
             <img src="images/fresco/fresco4.jpg" width=100%>
@@ -156,23 +171,29 @@ $(document).ready(function(){
             $('#smalltext').toggle();
             $('#myDIV0').toggle();
         });
+
     </script>
     <script>
         $('#text1').click(function() {
             $('#smalltext1').toggle();
             $('#myDIV1').toggle();
         });
+
     </script>
 
     <script>
         $('#text2').click(function() {
             $('#myDIV2').toggle();
         });
+
     </script>
     <script>
         $('#text3').click(function() {
             $('#smalltext3').toggle();
         });
+
     </script>
 
-</body></html>
+</body>
+
+</html>
