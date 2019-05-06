@@ -26,6 +26,7 @@ body {
     pointer-events: none;
 }
 
+
 #diagram1 {
     position: absolute;
     width: 100%;
@@ -160,6 +161,7 @@ marquee {
     background-color: transparent;
     font-family: 'myFont4';
     cursor: crosshair;
+    font-size: 25px;
 }
 
 
@@ -176,6 +178,7 @@ marquee {
     background-color: transparent;
     font-family: 'myFont4';
     cursor: crosshair;
+    font-size: 25px;
 }
 
 #smalltext1 {
@@ -202,6 +205,7 @@ p {
     background-color: transparent;
     font-family: 'myFont4';
     cursor: crosshair;
+    font-size: 25px;
 }
 
 #text3 {
@@ -216,6 +220,7 @@ p {
     background-color: transparent;
     font-family: 'myFont4';
     cursor: crosshair;
+    font-size: 25px;
 }
 
 #smalltext3 {
