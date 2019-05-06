@@ -83,14 +83,14 @@ body {
     margin-left: 0.8em;
 }
 
-a{
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
-    color:blue;
+    color: blue;
 }
 
 #close {
@@ -99,7 +99,7 @@ a:hover{
     float: right;
     width: auto;
     padding-right: 10px;
-font-size: 40px;
+    font-size: 40px;
 }
 
 marquee {
