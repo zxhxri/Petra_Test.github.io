@@ -13,18 +13,6 @@ body {
     display: none;
 }
 
-.loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
-    opacity: .8;
-}
-
-
 
 @font-face {
     font-family: myFont4;
@@ -151,9 +139,19 @@ marquee {
     justify-content: space-between;
 }
 
-.wrapper4 {
-    display: block;
+#wrapper4 {
+    display: inline-block;
     justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 2em;
+    padding-bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 2.5em;
 }
 
 #smalltext {
@@ -235,9 +233,33 @@ p {
     font-size: 25px;
 }
 
+#smalltext2 {
+    font-size: 15px;
+}
+
 #smalltext3 {
     font-size: 15px;
 }
+
+#smalltext4 {
+    font-size: 15px;
+}
+
+#text4 {
+    width: 20%;
+    float: right;
+    position: relative;
+    top: 20px;
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-right: 2px;
+    height: auto;
+    background-color: transparent;
+    font-family: 'myFont4';
+    cursor: crosshair;
+    font-size: 25px;
+}
+
 
 .container0 {
     position: relative;
@@ -280,6 +302,12 @@ p {
     margin-bottom: 2.5em;
 }
 
+#manual {
+    display: inline;
+    float: right;
+    border-top: 1px solid black;
+}
+
 .container3 {
     position: relative;
     width: 78%;
@@ -296,7 +324,7 @@ p {
 .container4 {
     position: relative;
     width: 78%;
-    height: auto;
+    height: 500px;
     top: 2em;
     padding-bottom: 5px;
     left: 5px;
@@ -304,6 +332,26 @@ p {
     background: transparent;
     border-radius: 10px;
     margin-bottom: 2.5em;
+    float: left;
+}
+
+.image-wrapper {
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+.image-wrapper > img {
+    width: 100%;
+}
+
+.image-wrapper:nth-child(even) {
+    padding-left: 5px;
+}
+
+.image-wrapper:nth-child(odd) {
+    padding-right: 5px;
 }
 
 .projects {
@@ -380,7 +428,7 @@ button {
     #text0,
     #text1,
     #text2,
-    #text3 {
+    #text3 #text4 {
         display: none;
     }
 
@@ -401,6 +449,23 @@ button {
     .info {
         width: 100% !important;
         height: auto;
+    }
+
+    marquee {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 20%;
+        background-color: gainsboro;
+        color: black;
+        font-family: myFont4;
+        font-size: 1.4em;
+        z-index: 999999;
+        /*    padding-bottom: 2px;*/
+    }
+
+    .contents {
+        display: none;
     }
 }
 
@@ -448,7 +513,8 @@ button {
     #text0,
     #text1,
     #text2,
-    #text3 {
+    #text3,
+    #text4 {
         display: none;
     }
 
@@ -464,5 +530,22 @@ button {
     #myDIV1,
     #myDIV2 {
         display: block;
+    }
+
+    .contents {
+        display: none;
+    }
+
+    marquee {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: gainsboro;
+        color: black;
+        font-family: myFont4;
+        font-size: 1.8em;
+        z-index: 999999;
+        /*    padding-bottom: 2px;*/
     }
 }
