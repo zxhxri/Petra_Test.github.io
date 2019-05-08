@@ -510,7 +510,7 @@ button {
         display: none;
     }
 
-    #diagram1 {
+    #diagram1, #diagram0 {
         display: none;
     }
 }
@@ -607,7 +607,7 @@ button {
         display: none;
     }
 
-    #diagram1 {
+    #diagram1, #diagram0 {
         display: none;
     }
 }
