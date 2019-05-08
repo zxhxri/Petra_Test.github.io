@@ -7,6 +7,16 @@ body {
     /*    max-height: 100%;*/
     scroll-behavior: smooth !important;
     position: relative;
+    user-select: none;
+    /* supported by Chrome and Opera */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ::-webkit-scrollbar {
@@ -20,29 +30,22 @@ body {
 }
 
 #diagram0 {
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: 1000px;
     z-index: 9;
     pointer-events: none;
+    left: 5px;
+    top: 550px;
 }
 
-
-#diagram1 {
-    position: absolute;
-    width: 100%;
-    z-index: 9;
-    pointer-events: none;
-    padding-left: 50%;
-    top: 400px;
-}
 
 #diagram2 {
-    position: absolute;
-    z-index: 999999;
-    width: 100%;
-    padding-top: 1500px;
-    padding-left: 1100px;
+    position: fixed;
+    width: 1300px;
+    z-index: 9;
     pointer-events: none;
+    left: 1115px;
+    top: 570px;
 }
 
 .contents {
@@ -56,6 +59,7 @@ body {
     font-family: myFont4;
     font-size: 1.4em;
     z-index: 999999;
+    padding-left: 10px;
 
 }
 
@@ -143,21 +147,20 @@ marquee {
     display: inline-block;
     justify-content: space-between;
     position: relative;
+    /*
     width: 100%;
     height: auto;
+*/
     top: 2em;
-    padding-bottom: 5px;
+    /*    padding-bottom: 15px;*/
     left: 5px;
     right: 5px;
     background: transparent;
     border-radius: 10px;
-    margin-bottom: 2.5em;
+    /*    margin-bottom: 2.5em;*/
 }
 
-#smalltext {
-    font-size: 15px;
-    /*    line-height: 20px;*/
-}
+
 
 #text0 {
     width: 20%;
@@ -191,9 +194,7 @@ marquee {
     font-size: 25px;
 }
 
-#smalltext1 {
-    font-size: 15px;
-}
+
 
 p {
     padding-right: 10px;
@@ -233,16 +234,12 @@ p {
     font-size: 25px;
 }
 
-#smalltext2 {
-    font-size: 15px;
-}
-
-#smalltext3 {
-    font-size: 15px;
-}
-
+#smalltext,
+#smalltext1,
+#smalltext2,
+#smalltext3,
 #smalltext4 {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #text4 {
@@ -272,6 +269,29 @@ p {
     background: transparent;
     border-radius: 10px;
     margin-bottom: 2.5em;
+}
+
+
+#expand_grad p {
+    /*    font-family: 'myFont4';*/
+    font-size: 40px;
+    cursor: crosshair;
+    text-align: center;
+    margin: 0;
+}
+
+#expand_grad p:hover,
+#expand_glass p:hover {
+    color: blue;
+}
+
+
+#expand_glass p {
+    /*    font-family: 'myFont4';*/
+    font-size: 40px;
+    cursor: crosshair;
+    text-align: center;
+    margin: 0;
 }
 
 
@@ -305,7 +325,13 @@ p {
 #manual {
     display: inline;
     float: right;
-    border-top: 1px solid black;
+    /*    border: 1px solid black;*/
+    margin-bottom: 2.5em;
+}
+
+#loneliness {
+    display: inline;
+    float: right;
 }
 
 .container3 {
@@ -334,6 +360,8 @@ p {
     margin-bottom: 2.5em;
     float: left;
 }
+
+
 
 .image-wrapper {
     box-sizing: border-box;
@@ -390,6 +418,11 @@ button {
 }
 
 @media only screen and (max-device-width: 700px) {
+
+    body {
+        margin: 0;
+    }
+
     img {
         width: 100%;
     }
@@ -428,7 +461,8 @@ button {
     #text0,
     #text1,
     #text2,
-    #text3, #text4 {
+    #text3,
+    #text4 {
         display: none;
     }
 
@@ -451,7 +485,7 @@ button {
         height: auto;
     }
 
-  .contents {
+    .contents {
         display: none;
     }
 
@@ -467,9 +501,25 @@ button {
         z-index: 999999;
         /*    padding-bottom: 2px;*/
     }
+
+    #expand_glass p {
+        display: none;
+    }
+
+    #expand_grad p {
+        display: none;
+    }
+
+    #diagram1 {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 700px) {
+    body {
+        margin: 5px;
+    }
+
     img {
         width: 100%;
     }
@@ -547,5 +597,17 @@ button {
         font-size: 1.8em;
         z-index: 999999;
         /*    padding-bottom: 2px;*/
+    }
+
+    #expand_glass p {
+        display: none;
+    }
+
+    #expand_grad p {
+        display: none;
+    }
+
+    #diagram1 {
+        display: none;
     }
 }
