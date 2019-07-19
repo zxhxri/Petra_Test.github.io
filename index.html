@@ -11,12 +11,20 @@
 
 
     <script>
+        
+        $(document).ready(function () {
+              $(".info").slideToggle();
+             });
+        
         $(document).ready(function() {
 
-            $(".top").click(function() {
-                $(".info").slideToggle("slow");
-            });
+           
             $('#close').click(function() {
+                $('.info').slideToggle("slow");
+            });
+             });
+        $(document).ready(function() {
+             $('#name').click(function() {
                 $('.info').slideToggle("slow");
             });
         });
@@ -26,21 +34,13 @@
 </head>
 
 <body>
-    <div id="diagram0">
-        <img src="images/diagrams/diagram2.png" width="25%">
-    </div>
+   
 
-
-
-    <div id="diagram2">
-        <img src="images/diagrams/diagram5.png" width="25%">
-    </div>
-
-    <div class="contents"><a href="#one">I.</a>&#32;<a href="#two">II.</a>&#32;<a href="#three">III.</a>&#32;<a href="#four">IV.</a>&#32;<a href="#five">V.</a></div>
+   
     <div class="topbar">
-        <marquee class="top" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="left">PETRA POPANGELOVA — BERLIN — LOOKING FOR A BETTER JOB </marquee>
+        <div id="name">Petra Popangelova </div> <div id="contact"><a href="mailto:petra.popangelova@hotmail.com">petra.popangelova@hotmail.com</a> <a href="tel:+49 15251955520">+49 15251955520</a></div><div class="contents"><a href="#one">I.</a>&#32;<a href="#two">II.</a>&#32;<a href="#three">III.</a>&#32;<a href="#four">IV.</a>&#32;<a href="#five">V.</a></div>
         <div class="info">
-            <div id="close">X</div>
+            <div id="close">×</div>
             <p>Multidisciplinary designer
                 material research,<br> product &amp; interior design, photography, concept development
                 <br><br>
@@ -48,7 +48,7 @@
                 — Graduated Royal Academy of Art, The Hague (NL)<br>
                 — Born in Sofia (BG) <br>
                 <br>
-                <a href="mailto:petra.popangelova@hotmail.com">petra.popangelova@hotmail.com</a> <br><a href="tel:+49 15251955520">+49 15251955520</a> <br>
+                 <br>
                 <a href="https://www.instagram.com/pe.trapp/" target="_blank">@pe.trapp</a>
             </p>
         </div>
@@ -77,9 +77,11 @@
         <div class="container0">
 
             <img src="images/graduation/grad1.jpg" width="100%">
+            
 
 
             <div id="myDIV0">
+                 
                 <img src="images/graduation/grad2.jpg" width="100%">
                 <img src="images/graduation/grad3.jpg" width="100%">
                 <img src="images/graduation/grad4.jpg" width="100%">
@@ -142,7 +144,7 @@
             <div class="image-wrapper0">
             <img src="images/divider/room.png" width=49.5% />
             <img id="fabric" src="images/divider/room%20divider_fabric.jpg" width=49.5% />
-            <img id="manual" src="images/divider/manual.png" width="100%" />
+            <img id="manual" src="images/divider/manual.jpg" width="100%" />
             </div>
         </div>
     </div>
@@ -175,11 +177,11 @@
 
         <div id="text4">
             <a href="#loneliness2">
-                <p>Loneliness and the city<br> (2017)<br><a name="loneliness2"></a>&#8600;</p>
+                <p>Titus<br> (2017)<br><a name="loneliness2"></a>&#8600;</p>
             </a>
-            <div id="smalltext4" style="display:none">What does it mean to be lonely? How do people react on loneliness? Is loneliness increasing in contemporary society?
-                In cooperation with the National Council for Health and Society (RVS).
-                Loneliness as a state in which being in public does equalise socialising and being among others. Excluding yourself as a matter of choice. Avoiding any contact, lonesome feelings disappear where a stuck position makes you forget who you are. Lonesome meditation corner in an art gallery, two relaxing fish videos, your old lazy boy chair. <br><br>research, concept, installation,video, post-production</div>
+            <div id="smalltext4" style="display:none">Comissioned by Titus Brandsma elementary school in Delft 
+In collaboration with Bagdat Sert and Eunice Ma 
+Multi-functional modular shelving system that can be easily assembled and disassembled using pre-made components. It is at the same time both a spatial divider and workspaces with a variety of privacies and seating options. </div>
         </div>
 
         <div class="mobile_text">
@@ -187,10 +189,12 @@
         </div>
         <div class="container4">
 
-            <img src="images/loneliness/loneliness9.jpg" width=100% />
-            <img src="images/loneliness/loneliness4.jpg" width=100% />
-            <img src="images/loneliness/loneliness8.jpg" width=49.5% />
-            <img id="loneliness" src="images/loneliness/loneliness10.jpg" width=49.5% />
+            <img src="images/titus/titusplans.jpg" width=100% />
+            <img src="images/titus/1.jpg" width=100% />
+            <img src="images/titus/2.jpg" width=100% />
+            <img src="images/titus/3.jpg" width=100% />
+            <img src="images/titus/4.jpg" width=100% />
+            
         </div>
     </div>
 
@@ -237,6 +241,10 @@
             $('#smalltext4').slideToggle(1000);
         });
 
+    </script>
+    
+    <script>
+        window.onload = function
     </script>
 
 </body>
