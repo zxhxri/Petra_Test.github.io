@@ -91,7 +91,7 @@ body {
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: gainsboro;
+    background-color: white;
     color: black;
     font-family: myFont4;
     font-size: 1.4em;
@@ -101,7 +101,7 @@ body {
 
 .topbar .info {
     display: none;
-    background-color: gainsboro;
+    background-color: white;
     height: 40%;
     position: fixed;
     width: 100%;
@@ -110,6 +110,8 @@ body {
     left: 0;
     font-family: 'myFont4';
     font-size: 20px;
+    border-top: 1px solid black;
+    border-radius: 10px;
 
 }
 
@@ -276,12 +278,14 @@ p {
     font-family: 'myFont4';
     width: 80%;
     padding-left: 15px;
-    border-top: 1px solid black;
+/*    border-top: 1px solid black;*/
 /*    height: 100%;*/
 }
 
 .mobile_text p{
     margin:0px;
+    padding-top: 3px;
+    border-top: 1px solid black;
 }
 
 .mobile_text_top{
@@ -294,12 +298,13 @@ p {
     font-family: 'myFont4';
     width: 80%;
     padding-left: 15px;
-    border-top: 1px solid black;
+/*    border-top: 1px solid black;*/
 /*    height: 100%;*/
 }
 
 .mobile_text_top p{
     margin:0px;
+     border-top: 1px solid black;
 }
 
 #text4 {
