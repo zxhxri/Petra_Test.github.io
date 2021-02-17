@@ -102,7 +102,7 @@ body {
 .topbar .info {
     display: none;
     background-color: white;
-    height: 40%;
+    height: 30%;
     position: fixed;
     width: 100%;
     z-index: 999999;
