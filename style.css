@@ -21,6 +21,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+*{
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -169,21 +172,13 @@ marquee:hover {
 }
 
 #wrapper4 {
-    width: 100%;
-    display: inline-block;
+     display: inline-block;
     justify-content: space-between;
-    position: relative;
-    /*
-    width: 100%;
-    height: auto;
-*/
-    top: 2em;
-    /*    padding-bottom: 15px;*/
-    left: 1.2px;
-    right: 5px;
-    background: transparent;
-    border-radius: 10px;
-    /*    margin-bottom: 2.5em;*/
+}
+
+#wrapper6 {
+     display: inline-block;
+    justify-content: space-between;
 }
 
 
@@ -260,11 +255,27 @@ p {
     font-size: 19px;
 }
 
+#text6 {
+    width: 20%;
+    float: right;
+    position: relative;
+    top: 20px;
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-right: 2px;
+    height: auto;
+    background-color: transparent;
+    font-family: 'myFont4';
+    cursor: crosshair;
+    font-size: 19px;
+}
+
 #smalltext,
 #smalltext1,
 #smalltext2,
 #smalltext3,
-#smalltext4 {
+#smalltext4,
+#smalltext6{
     font-size: 16px;
 }
 
@@ -435,6 +446,19 @@ p {
     margin-bottom: 2.5em;
     float: left;
 }
+.container6 {
+    position: relative;
+    width: 78%;
+/*    height: 500px;*/
+    top: 2em;
+    padding-bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 2.5em;
+    float: left;
+}
 
 
 
@@ -531,13 +555,20 @@ button {
         margin-right: 0;
         left: 0px;
     }
+    
+    .container6 {
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
+    }
 
 
     #text0,
     #text1,
     #text2,
     #text3,
-    #text4 {
+    #text4,
+    #text6{
 /*        display: none;*/
           z-index: 2;
         border-top: 1px solid black;
@@ -637,6 +668,12 @@ button {
         margin-right: 0;
         left: 0px;
     }
+    
+    .container6 {
+        width: 100%;
+        margin-right: 0;
+        left: 0px;
+    }
 
 
 
@@ -644,7 +681,8 @@ button {
     #text1,
     #text2,
     #text3,
-    #text4 {
+    #text4,
+    #text6{
         z-index: 2;
 /*        width: 100%;*/
         border-top: 1px solid black;
