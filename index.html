@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
 
-
+<link rel="stylesheet" href="https://use.typekit.net/cnl0ezl.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
@@ -16,15 +16,23 @@
         });
 
         $(document).ready(function() {
-
-
             $('#close').click(function() {
                 $('.info').slideToggle("slow");
             });
         });
         $(document).ready(function() {
+            $('#filmclose').click(function() {
+                $('.filmjobs').slideToggle("slow");
+            });
+        });
+        $(document).ready(function() {
             $('#name').click(function() {
                 $('.info').slideToggle("slow");
+            });
+        });
+        $(document).ready(function() {
+            $('#film').click(function() {
+                $('.filmjobs').slideToggle("slow");
             });
         });
     </script>
@@ -37,27 +45,53 @@
 
     <div class="topbar">
         <div id="name">Petra Popangelova </div>
-        <div id="contact"><a href="mailto:petra.popangelova@hotmail.com">petra.popangelova@hotmail.com</a> <a href="tel:+49 15251955520">+49 15251955520</a></div>
-        <div class="contents"><a href="#six">I.</a>&#32;<a href="#one">II.</a>&#32;<a href="#two">III.</a>&#32;<a href="#three">IV.</a>&#32;<a href="#four">V.</a>&#32;<a href="#five">VI.</a></div>
+        <div class="contents"><div id="film">FILM JOBS</div><a href="#six">I.</a>&#32;<a href="#one">II.</a>&#32;<a href="#two">III.</a>&#32;<a href="#three">IV.</a>&#32;<a href="#four">V.</a>&#32;<a href="#five">VI.</a></div>
         <div class="info">
-            <div id="close" style="font-family:monospace;">×</div>
+            <div id="close">close</div>
             <p>
 
-                Multidisciplinary designer
+                <b>Multidisciplinary designer</b>
 <br><br>
-                material research, interior and product design<br>
+                Material research, interior and product design<br>
                 Currently based in Berlin (DE)
                 <br><br>
                 Graduated from the Royal Academy of Art, The Hague (NL)<br>
                 Department of Interior Architecture and Furniture Design
                 <br><br>
-                <a href="https://www.instagram.com/pe.trapp/" target="_blank">@pe.trapp</a>
+                
                 <br>
+                <a href="tel:+49 15251955520">+49 15251955520</a>    <br>
                 <a href="mailto:petra.popangelova@hotmail.com">petra.popangelova@hotmail.com</a>
                 <br>
-                <a href="tel:+49 15251955520">+49 15251955520</a>
+                <a href="https://www.instagram.com/pe.trapp/" target="_blank">@pe.trapp</a>
                 <br><br>
                 <a href="https://zahari.xyz/" target="_blank">Web design: Zahari Dimitrov</a>
+            </p>
+        </div>
+        <div class="filmjobs">
+            <div id="filmclose">close</div>
+            <p>
+
+                <b>Property Assistant</b><br>
+2021 Das Haus der Träume<br>
+TV Series, RTL+ [de], TVNOW [de]<br>
+X Filme Creative Pool
+<br/><br/>
+<b>Assistant to Prop Master / Buyer</b><br>
+2022 Tender Hearts<br>
+Odeon Fiction GmbH
+<br/><br/>
+<b>Prop Assistant</b><br>
+2023 LIDL 50 Jahre<br>
+Bubbles Film
+<br/><br/>
+<b>Assistant to Prop Master / Buyer</b><br>
+2022–2023 Sterben<br>
+Port au Prince Film &amp; Kultur Produktion GmbH
+<br/><br/>
+<b>Assistant Production Designer</b><br>
+2023 Damals plötzlich jetzt<br>
+Melissa Isabell Jäger und Mo Jäger GbR [de]   
             </p>
         </div>
     </div>
