@@ -27,12 +27,14 @@
         });
         $(document).ready(function() {
             $('#name').click(function() {
-                $('.info').slideToggle("slow");
+                $('.info').show("slow");
+                $('.filmjobs').hide("slow");
             });
         });
         $(document).ready(function() {
             $('#film').click(function() {
-                $('.filmjobs').slideToggle("slow");
+                $('.filmjobs').show("slow");
+                $('.info').hide("slow");
             });
         });
     </script>
