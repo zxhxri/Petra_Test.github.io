@@ -45,13 +45,23 @@ body {
     right: 0px;
     float: right;
     padding-right: 10px;
+    color: #cfcfcf;
 }
 .contents #gallery {
     display: inline-block;
+    margin-left: 10px;
+    background-color: #8c8c8c;
+    border-radius: 20px;
+    padding-left: 10px;
     padding-right: 10px;
+      color: #cfcfcf;
 }
 .contents #film{
     display: inline-block;
+    background-color: #8c8c8c;
+     padding-left: 10px;
+    padding-right: 10px;    
+    border-radius: 20px;
 /*    position: absolute;*/
 /*    float: left;*/
 /*    display: block;*/
@@ -59,10 +69,12 @@ body {
 }
 
 .contents #film:hover, .contents #gallery:hover{
-    color: blue;
+    background-color: black;
     cursor: pointer;
     
 }
+
+
 
 #name{
     float: left;
@@ -95,7 +107,8 @@ font-weight: 500;
 font-style: normal;
     font-size: 22px;
     z-index: 999999;
-    padding-bottom: 1.5px;
+    padding-top: 3px;
+    padding-bottom: 2px;
 }
 
 .topbar .info {
@@ -166,6 +179,13 @@ opacity: 50%;
     cursor: pointer;
 }
 
+
+#arrow{
+    font-size: 16px;
+}
+#arrow:hover{
+    color: blue;
+}
 
 marquee:hover {
      color: blue;
@@ -472,6 +492,13 @@ font-style: normal;
 
 }
 
+.container2 img::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+
 #fabric{
     box-sizing: border-box;
     float: right;
@@ -544,6 +571,13 @@ font-style: normal;
 /*    border-radius: 10px;*/
     margin-bottom: 2.5em;
     float: left;
+    
+}
+
+.container7 img::after{
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
@@ -612,10 +646,10 @@ button {
     color: yellow;
 }
 
-#myDIV0,
-#myDIV1,
-#myDIV2 {
-/*    display: none;*/
+#myDIV0::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media only screen and (max-device-width: 1024px) {
