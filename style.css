@@ -51,7 +51,7 @@ body {
     display: inline-block;
     margin-left: 10px;
     background-color: #8c8c8c;
-    border-radius: 20px;
+    border-radius: 25px;
     padding-left: 10px;
     padding-right: 10px;
       color: #cfcfcf;
@@ -61,7 +61,7 @@ body {
     background-color: #8c8c8c;
      padding-left: 10px;
     padding-right: 10px;    
-    border-radius: 20px;
+    border-radius: 25px;
 /*    position: absolute;*/
 /*    float: left;*/
 /*    display: block;*/
@@ -108,7 +108,7 @@ font-style: normal;
     font-size: 22px;
     z-index: 999999;
     padding-top: 3px;
-    padding-bottom: 2px;
+    padding-bottom: 2.5px;
 }
 
 .topbar .info {
@@ -728,12 +728,14 @@ button {
 
 
     .info p {
-        font-size: 20px;
+        font-size: 30px;
     }
 
-    .info, .filmjobs {
+  .info, .filmjobs {
         width: 100% !important;
         overflow-x:scroll;
+        padding-bottom: 10px;
+        max-height: 100%;
     }
 
     .contents {
@@ -761,6 +763,9 @@ button {
         display: none;
     }
 
+    #close, #filmclose{
+        font-size: 40px;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -837,12 +842,14 @@ button {
     }
 
     .info p {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .info, .filmjobs {
         width: 100% !important;
         overflow-x:scroll;
+        padding-bottom: 10px;
+        max-height: 100%;
     }
 
     #myDIV0,
@@ -872,5 +879,8 @@ button {
     }
      .mobile_text, .mobile_text_top{
         display: none;
+    }
+    #close, #filmclose{
+        font-size: 40px;
     }
 }
