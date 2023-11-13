@@ -727,7 +727,7 @@ button {
     }
 
 
-    .info p {
+ .info p, .filmjobs p {
         font-size: 30px;
     }
 
@@ -841,7 +841,7 @@ button {
         
     }
 
-    .info p {
+    .info p, .filmjobs p {
         font-size: 30px;
     }
 
