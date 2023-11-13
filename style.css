@@ -658,6 +658,10 @@ button {
         margin: 0;
     }
 
+    .topbar{
+        font-size: 40px;
+    }
+    
     img {
         width: 100%;
     }
@@ -762,6 +766,9 @@ button {
 @media only screen and (max-width: 1024px) {
     body {
         margin: 5px;
+    }
+    .topbar{
+        font-size: 40px;
     }
 
     img {
